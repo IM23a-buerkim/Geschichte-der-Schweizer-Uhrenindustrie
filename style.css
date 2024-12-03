@@ -209,18 +209,17 @@
 
     #header > img {
         background-color: transparent;
-        height: 10vh;
-        margin-right: 2vh;
-        border-radius: 1vh;
+        height: 7vw;
+        border-radius: 1vw;
     }
 
     #header-Titel {
         background-color: transparent;
         color: white;
         font-weight: bold;
-        font-size: 6vh;
+        font-size: 6vw;
         text-align: center;
-        width: 80vh;
+        width: 70vw;
     }
 
     main {
@@ -235,7 +234,10 @@
     }
 
     #uhr {
-        width: 35vh;
+        position: absolute;
+        height: 30vh;
+        margin-top: -15vh;
+        margin-left: -20vw;
     }
 
     #geschichte-abschnitt {
