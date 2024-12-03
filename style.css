@@ -197,7 +197,7 @@
         display: flex; /* Flexbox wird auf den Body angewendet */
         flex-direction: column; /* Stellt sicher, dass Header, Main und Footer in einer Spalte sind */
         min-height: 100vh; /* Der Body füllt immer mindestens die Höhe des Bildschirms */
-        overflow: hidden;
+        overflow-y: auto;
     }
 
     #header {
