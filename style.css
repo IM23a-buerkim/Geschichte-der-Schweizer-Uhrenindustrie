@@ -217,13 +217,13 @@
         background-color: transparent;
         color: white;
         font-weight: bold;
-        font-size: 6vw;
+        font-size: 30px;
         text-align: center;
         width: 70vw;
     }
 
     main {
-        flex: 1; /* Ermöglicht es dem Main-Bereich, den verfügbaren Platz zu füllen */
+        flex: 1;
     }
 
     #main-article {
@@ -231,24 +231,31 @@
         align-items: center;
         justify-content: space-evenly;
         height: 60vh;
+        position: relative;
+        overflow: hidden;
     }
 
     #uhr {
         position: absolute;
-        height: 30vh;
-        margin-top: -15vh;
-        margin-left: -20vw;
+        height: 50vh;
+        margin-top: -25vh;
+        margin-left: -50vw;
+        z-index: 0;
+        overflow: hidden;
     }
 
     #geschichte-abschnitt {
         background-color: lightgray;
+        opacity: 95%;
         /* height: 200px; */
-        width: 25%;
+        margin-right: -10vw;
+        width: 80vw;
         height: 35vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 25px;
+        z-index: 5;
     }
 
     #geschichte-titel {
