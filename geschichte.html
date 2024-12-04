@@ -15,7 +15,7 @@
 <header>
     <div id="header">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1280px-Flag_of_Switzerland.svg.png"
-        alt="Schweizer Flagge">
+             alt="Schweizer Flagge">
         <div id="header-Titel">Geschichte der Schweizer <br>Uhrenindustrie</div>
     </div>
     <nav>
@@ -23,7 +23,7 @@
 </header>
 
 <main>
-	<!--
+    <!--
     <div id="how-to-center-a-div">
         <div id="geschichte-start">Start</div>
     </div>
@@ -32,6 +32,11 @@
         <section id="geschichte-spalte2" class="geschichte-spalte2"></section>
     </article>
     -->
+    <div id="geschichte-menu-button" onclick="displaymenu()">
+        <div id="geschichte-menu-symbol">☰</div>
+        <a href="geschichte.html" id="geschichte-menu-button-top">Top</a>
+        <a href="index.html" id="geschichte-menu-button-home">Home</a>
+    </div>
     <article id="body">
         <div class="timeline-container">
             <ul>
@@ -75,7 +80,43 @@
         </div>
     </article>
 </main>
+<script>
+    const menuButton = document.getElementById('geschichte-menu-button');
+    const menuTop = document.getElementById('geschichte-menu-button-top');
+    const menuHome = document.getElementById('geschichte-menu-button-home');
+    const header = document.getElementById('header');
+    const button = document.getElementById('geschichte-menu-button');
+    const symbol = document.getElementById('geschichte-menu-symbol');
 
+    let menuOpen = false; // Zustand des Menüs
+    const scrollThreshold = header.offsetHeight; // Dynamische Berechnung der Header-Höhe
+
+    // Funktion zum Umschalten des Menüs
+    function displaymenu() {
+        menuOpen = !menuOpen; // Zustand ändern
+        const displayValue = menuOpen ? 'block' : 'none';
+        menuTop.style.display = displayValue;
+        menuHome.style.display = displayValue;
+        symbol.innerText = ''
+    }
+
+    // Event-Listener für Scrollen
+    window.addEventListener('scroll', () => {
+        // Menü schließen beim Scrollen
+        if (menuOpen) {
+            menuOpen = false;
+            menuTop.style.display = 'none';
+            menuHome.style.display = 'none';
+        }
+
+        // Dynamische Position des Buttons
+        if (window.scrollY > scrollThreshold) {
+            button.style.top = '2vh'; // Neue Position
+        } else {
+            button.style.top = '26vh'; // Startposition
+        }
+    });
+</script>
 <footer>
     <div id="footer">
         <a id="footer_main" class="footer_link" href="index.html">Home</a>
