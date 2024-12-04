@@ -283,3 +283,13 @@ main {
         padding-bottom: 0.5vh;
     }
 }
+
+@media screen and (max-width: 315px) {
+    #header-Titel {
+        font-size: 4vh;
+    }
+
+    #header > img {
+        border-radius: 5px;
+    }
+}
