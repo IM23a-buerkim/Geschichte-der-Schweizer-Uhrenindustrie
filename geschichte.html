@@ -97,7 +97,15 @@
         const displayValue = menuOpen ? 'block' : 'none';
         menuTop.style.display = displayValue;
         menuHome.style.display = displayValue;
-        symbol.innerText = ''
+        symbolmenu()
+    }
+
+    function symbolmenu() {
+        if (menuOpen === true) {
+            symbol.innerText = ''
+        } else {
+            symbol.innerText = '☰'
+        }
     }
 
     // Event-Listener für Scrollen
@@ -107,6 +115,7 @@
             menuOpen = false;
             menuTop.style.display = 'none';
             menuHome.style.display = 'none';
+            symbol.innerText = '☰'
         }
 
         // Dynamische Position des Buttons
