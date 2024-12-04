@@ -308,7 +308,7 @@
     }
 
     #geschichte-menu-button-top {
-        text-decoration: underline;
+        text-decoration: none;
         display: none;
         background-color: #0d542d;
         color: white;
@@ -319,7 +319,7 @@
     }
 
     #geschichte-menu-button-home {
-        text-decoration: underline;
+        text-decoration: none;
         display: none;
         background-color: #0d542d;
         color: white;
@@ -379,26 +379,6 @@
     <!-- -->
     }
 
-    #impressum_section1 {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 10vh;
-    <!-- -->
-    }
-
-    .impressum_text {
-        font-size: 3vh;
-        text-align: center;
-    <!-- -->
-    }
-
-    #impressum_text2 {
-        padding-top: 5vh;
-    <!-- -->
-    }
-
     #how-to-center-a-div {
         display: flex;
         align-items: center;
@@ -434,6 +414,26 @@
     #geschichte-spalte2 {
         width: 10%;
         height: 50vh;
+    <!-- -->
+    }
+
+    #impressum_section1 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 10vh;
+    <!-- -->
+    }
+
+    .impressum_text {
+        font-size: 3vh;
+        text-align: center;
+    <!-- -->
+    }
+
+    #impressum_text2 {
+        padding-top: 5vh;
     <!-- -->
     }
 
