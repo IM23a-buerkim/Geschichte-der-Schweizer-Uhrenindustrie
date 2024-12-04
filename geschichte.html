@@ -103,8 +103,10 @@
     function symbolmenu() {
         if (menuOpen === true) {
             symbol.innerText = ''
+            button.style.backgroundImage = `linear-gradient(to top, #0d542d 20%, #1c9654 80%)`;
         } else {
             symbol.innerText = '☰'
+            button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
         }
     }
 
@@ -116,6 +118,7 @@
             menuTop.style.display = 'none';
             menuHome.style.display = 'none';
             symbol.innerText = '☰'
+            button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
         }
 
         // Dynamische Position des Buttons
