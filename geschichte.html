@@ -34,8 +34,9 @@
     -->
     <div id="geschichte-menu-button" onclick="displaymenu()">
         <div id="geschichte-menu-symbol">☰</div>
-        <a href="geschichte.html" id="geschichte-menu-button-top">Top</a>
-        <a href="index.html" id="geschichte-menu-button-home">Home</a>
+        <a href="geschichte.html#header" id="geschichte-menu-button-top" class="geschichte-menu-links">Start</a>
+        <a href="index.html" id="geschichte-menu-button-home" class="geschichte-menu-links">Home</a>
+        <a href="geschichte.html#footer" id="geschichte-menu-button-ende" class="geschichte-menu-links">Ende</a>
     </div>
     <article id="body">
         <div class="timeline-container">
@@ -87,6 +88,7 @@
     const header = document.getElementById('header');
     const button = document.getElementById('geschichte-menu-button');
     const symbol = document.getElementById('geschichte-menu-symbol');
+    const ende = document.getElementById('geschichte-menu-button-ende')
 
     let menuOpen = false; // Zustand des Menüs
     const scrollThreshold = header.offsetHeight; // Dynamische Berechnung der Header-Höhe
@@ -97,6 +99,7 @@
         const displayValue = menuOpen ? 'block' : 'none';
         menuTop.style.display = displayValue;
         menuHome.style.display = displayValue;
+        ende.style.display = displayValue;
         symbolmenu()
     }
 
@@ -117,6 +120,7 @@
             menuOpen = false;
             menuTop.style.display = 'none';
             menuHome.style.display = 'none';
+            ende.style.display = 'none'
             symbol.innerText = '☰'
             button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
         }

@@ -15,12 +15,11 @@ body {
     min-height: 100vh;
 }
 
-/* Common Selectors with Shared Styles */
 #header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient( #13834b, #05381d);
+    background-image: linear-gradient(#13834b, #05381d);
     /* background-image: linear-gradient( #116e3b, #05381d); */
     /* background-color: #0d542d; */
 }
@@ -58,15 +57,19 @@ main {
     color: white;
     border-radius: 20px;
     z-index: 500;
-    transition-duration: 0.3s;
 }
 
-#geschichte-menu-button-top,
-#geschichte-menu-button-home {
+.geschichte-menu-links {
     text-decoration: none;
     display: none;
     background-color: transparent;
     color: white;
+
+}
+
+.geschichte-menu-links:hover {
+    background: rgba(211, 211, 211, 0.25);
+    border-radius: 10px;
 }
 
 #geschichte-abschnitt {
@@ -102,9 +105,26 @@ main {
     background: linear-gradient(to right, #5e8f75, #1f7250);
 }
 
+#impressum_section1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.impressum_text {
+    font-size: 3vh;
+    text-align: center;
+}
+
+#impressum_text2 {
+    padding-top: 5vh;
+}
+
 #footer {
     width: 100%;
-    background-color: #0d542d;
+    background-image: linear-gradient(#13834b, #05381d);
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -154,16 +174,9 @@ main {
         font-size: 3vh;
     }
 
-    #geschichte-menu-button-top,
-    #geschichte-menu-button-home {
+    .geschichte-menu-links {
         font-size: 2.5vh;
-        margin-top: 1vh;
-        padding-left: 1vw;
-        margin-right: 1vw;
-    }
-
-    #geschichte-menu-button-home {
-        padding-bottom: 1vh;
+        padding: 1vh 1vw;
     }
 
     #geschichte-abschnitt {
@@ -186,27 +199,10 @@ main {
         margin: 2vh;
     }
 
-    #impressum_section1 {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 10vh;
-    }
-
-    .impressum_text {
-        font-size: 3vh;
-        text-align: center;
-    }
-
-    #impressum_text2 {
-        padding-top: 5vh;
-    }
-
     #footer {
         height: 12vh;
         padding-top: 5vh;
-        font-size: 2vh;
+        font-size: 2.5vh;
     }
 
     #footer_übersichtA {
@@ -256,53 +252,61 @@ main {
         font-size: 2.5vh;
     }
 
-    #geschichte-menu-button-top,
-    #geschichte-menu-button-home {
+    .geschichte-menu-links {
         font-size: 3vh;
         padding: 1vh 3vw;
     }
 
-        #geschichte-abschnitt {
-            opacity: 95%;
-            margin-right: -10vw;
-            width: 80vw;
-            height: 35vh;
-            z-index: 5;
-        }
-
-        #geschichte-titel {
-            font-size: 5vh;
-            margin: 3vh;
-        }
-
-        #geschichte-text {
-            padding-bottom: 9vh;
-            font-size: 2.25vh;
-        }
-
-        #geschichte-link {
-            font-size: 2vh;
-            padding: 0.8vh 4vh;
-            margin: 2vh;
-        }
-
-        #footer {
-            height: 12vh;
-            padding-top: 5vh;
-            font-size: 2vh;
-        }
-
-        #footer_übersichtA {
-            padding-bottom: 0.5vh;
-        }
+    #geschichte-abschnitt {
+        opacity: 95%;
+        margin-right: -10vw;
+        width: 80vw;
+        height: 35vh;
+        z-index: 5;
     }
 
-    @media screen and (max-width: 315px) {
-        #header-Titel {
-            font-size: 4vh;
-        }
-
-        #header > img {
-            border-radius: 5px;
-        }
+    #geschichte-titel {
+        font-size: 5vh;
+        margin: 3vh;
     }
+
+    #geschichte-text {
+        padding-bottom: 9vh;
+        font-size: 2.25vh;
+    }
+
+    #geschichte-link {
+        font-size: 2vh;
+        padding: 0.8vh 4vh;
+        margin: 2vh;
+    }
+
+    .impressum_text {
+        font-size: 2vh;
+        margin: 2vw;
+    }
+
+    .copyright > p, .copyright a {
+        font-size: 1.6vh;
+    }
+
+    #footer {
+        height: 12vh;
+        padding-top: 5vh;
+        font-size: 2.5vh;
+    }
+
+    #footer_übersichtA {
+        padding-bottom: 0.5vh;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    #header-Titel {
+        font-size: 4vh;
+    }
+
+    #header > img {
+        border-radius: 5px;
+    }
+}
