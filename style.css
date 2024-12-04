@@ -57,6 +57,7 @@ main {
     color: white;
     border-radius: 20px;
     z-index: 500;
+    transition-duration: 0.5s;
 }
 
 .geschichte-menu-links {
