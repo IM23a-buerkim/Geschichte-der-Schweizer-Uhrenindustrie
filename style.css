@@ -249,47 +249,53 @@ main {
         font-size: 2.5vh;
     }
 
-    #geschichte-abschnitt {
-        opacity: 95%;
-        margin-right: -10vw;
-        width: 80vw;
-        height: 35vh;
-        z-index: 5;
+    #geschichte-menu-button-top,
+    #geschichte-menu-button-home {
+        font-size: 3vh;
+        padding: 1vh 3vw;
     }
 
-    #geschichte-titel {
-        font-size: 5vh;
-        margin: 3vh;
+        #geschichte-abschnitt {
+            opacity: 95%;
+            margin-right: -10vw;
+            width: 80vw;
+            height: 35vh;
+            z-index: 5;
+        }
+
+        #geschichte-titel {
+            font-size: 5vh;
+            margin: 3vh;
+        }
+
+        #geschichte-text {
+            padding-bottom: 9vh;
+            font-size: 2.25vh;
+        }
+
+        #geschichte-link {
+            font-size: 2vh;
+            padding: 0.8vh 4vh;
+            margin: 2vh;
+        }
+
+        #footer {
+            height: 12vh;
+            padding-top: 5vh;
+            font-size: 2vh;
+        }
+
+        #footer_übersichtA {
+            padding-bottom: 0.5vh;
+        }
     }
 
-    #geschichte-text {
-        padding-bottom: 9vh;
-        font-size: 2.25vh;
-    }
+    @media screen and (max-width: 315px) {
+        #header-Titel {
+            font-size: 4vh;
+        }
 
-    #geschichte-link {
-        font-size: 2vh;
-        padding: 0.8vh 4vh;
-        margin: 2vh;
+        #header > img {
+            border-radius: 5px;
+        }
     }
-
-    #footer {
-        height: 12vh;
-        padding-top: 5vh;
-        font-size: 2vh;
-    }
-
-    #footer_übersichtA {
-        padding-bottom: 0.5vh;
-    }
-}
-
-@media screen and (max-width: 315px) {
-    #header-Titel {
-        font-size: 4vh;
-    }
-
-    #header > img {
-        border-radius: 5px;
-    }
-}
