@@ -1,37 +1,37 @@
 /* Reset */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	background-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 .another {
-	margin-top: -30px;
-	margin-bottom: 30px;
-	display: block;
-	font-size: 20px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 22px;
 }
 
 /* General */
 #body {
-	line-height: 1.6;
-	color: #444;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	padding: 8vh 10vh;
-	letter-spacing: .02em;
-	background: transparent;
+    line-height: 1.6;
+    color: #444;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    padding: 8vh 10vh;
+    letter-spacing: .02em;
+    background: transparent;
 }
 
 h2 {
-	font-size: 20px;
-	font-weight: 400;
-	margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 
@@ -41,7 +41,7 @@ h2 {
 /*Combined*/
 .timeline-container,
 .timeline-container li {
-	position: relative;
+    position: relative;
 }
 
 .timeline-container:after,
@@ -49,8 +49,8 @@ h2 {
 .timeline-container li > div:before,
 .timeline-container li:first-child div:after,
 .timeline-container li:last-child div:after {
-	content: '';
-	position: absolute;
+    content: '';
+    position: absolute;
 }
 
 /* color */
@@ -58,220 +58,245 @@ h2 {
 .timeline-container li:before,
 .timeline-container li > div:before,
 .timeline-container:after {
-	background-color: lightgray;
+    background-color: lightgray;
 }
 
 .timeline-container:after,
 .timeline-container li small,
 .timeline-container li:first-child div:after,
 .timeline-container li:last-child div:after {
-	left: 50%;
-	transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .timeline-container li small,
 .timeline-container li > div:before {
-	top: 50%;
-	transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*clearfix*/
 .timeline-container li:after {
-	clear: both;
-	content:'';
-	display: table;
+    clear: both;
+    content: '';
+    display: table;
 }
 
 .timeline-container li {
-	margin: 60px 0;
+    margin: 60px 0;
 }
 
 .timeline-container li:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .timeline-container li:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /*timeline content*/
 .timeline-container li > div {
-	width: 40%;
-	color: black;
-	padding: 15px 25px;
-	border-radius: 1px;
+    width: 40%;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 1px;
 }
 
 .timeline-container li:nth-child(odd) > div {
-	float: left;
+    float: left;
 }
 
 .timeline-container li:nth-child(even) > div {
-	float: right;
+    float: right;
 }
 
 /* Main vertical line middile */
 .timeline-container:after {
-	width: 2px;
-	height: 100%;
-	top: 0;
-	bottom: 0;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
 }
 
 /* date */
 .timeline-container li small {
-	position: absolute;
-	color: #555;
-	font-size: 30px;
-	font-weight: 600;
-	margin-left: 20px;
+    position: absolute;
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
 }
 
 .timeline-container li:nth-child(even) small {
-	margin-left: 0;
-	left: auto;
-	right: 50%;
-	margin-right: 20px;
+    margin-left: 0;
+    left: auto;
+    right: 50%;
+    margin-right: 20px;
 }
 
 /* Square */
 .timeline-container li:before {
-	height: 7px;
-	width: 8px;
-	border: 3px solid #fff;
-	z-index: 2;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+    height: 7px;
+    width: 8px;
+    border: 3px solid #fff;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Horizontal line */
 .timeline-container li > div:before {
-	height: 2px;
-	left: 40%;
-	width: 10%;
+    height: 2px;
+    left: 40%;
+    width: 10%;
 }
+
 .timeline-container li:nth-child(even) div:before {
-	left: auto;
-	right: 40%;
+    left: auto;
+    right: 40%;
 }
 
 /* Remove the top part of main vertical line */
 .timeline-container li:first-child div:after,
 .timeline-container li:last-child div:after {
-	width: 2px;
-	top: 0;
-	background-color: white;
-	height: 50%;
-	z-index: 1;
+    width: 2px;
+    top: 0;
+    background-color: white;
+    height: 50%;
+    z-index: 1;
 }
 
 .timeline-container li:last-child div:after {
-	top: auto;
-	bottom: 0;
+    top: auto;
+    bottom: 0;
 }
 
 ul > li > div {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 ul > li > div > #img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul > li > div > #img > img {
-	height: 50vh;
-	align-self: center;
-	margin: 2vh;
+    height: 50vh;
+    align-self: center;
+    margin: 2vh;
+}
+
+ul > li > div > a {
+    text-decoration: none;
+    align-self: center;
+    color: white;
+    padding: 5px 20px;
+    margin: 5px;
+    background-image: linear-gradient(to left, #1c9654, #0d542d);
+    border-radius: 20px;
+}
+
+ul > li > div > a:hover {
+    background-image: linear-gradient(to left, #1bc96d, #128346);
 }
 
 
 /* Responsive CSS */
 @media screen and (max-width: 767px) {
 
-	.timeline-container li:nth-child(odd) > div,
-	.timeline-container li:nth-child(even) > div{
-		float: right;
-		width: 95%;
-	}
+    h2 {
+        font-size: 20px;
+    }
 
-	.timeline-container li:first-child div:after,
-	.timeline-container li:last-child div:after {
-		content: none;
-	}
+    body {
+        font-size: 14px;
+    }
 
-	.timeline-container:after,
-	.timeline-container li:first-child div:after,
-	.timeline-container li:last-child div:after,
-	.timeline-container li:before {
-		top: 0;
-		left: 0;
-	}
+    .timeline-container li:nth-child(odd) > div,
+    .timeline-container li:nth-child(even) > div {
+        float: right;
+        width: 95%;
+    }
 
-	.timeline-container li small,
-	.timeline-container li:nth-child(even) small {
-		top: 0;
-		left: 3%;
-		margin: 0;
-		right: auto;
-		font-size: 22px;
-	}
+    .timeline-container li:first-child div:after,
+    .timeline-container li:last-child div:after {
+        content: none;
+    }
 
-	.timeline-container li {
-		margin: 0;
-		padding: 35px 0;
-	}
+    .timeline-container:after,
+    .timeline-container li:first-child div:after,
+    .timeline-container li:last-child div:after,
+    .timeline-container li:before {
+        top: 0;
+        left: 0;
+    }
 
-	.timeline-container li:last-child > div:after {
-		content: '';
-		height: 7px;
-		width: 8px;
-		position: absolute;
-		top: 100%;
-		border: 3px solid #fff;
-		z-index: 2;
-		background-color: transparent;
-	}
+    .timeline-container li small,
+    .timeline-container li:nth-child(even) small {
+        top: 0;
+        left: 3%;
+        margin: 0;
+        right: auto;
+        font-size: 22px;
+    }
+
+    .timeline-container li {
+        margin: 0;
+        padding: 35px 0;
+    }
+
+    .timeline-container li:last-child > div:after {
+        content: '';
+        height: 7px;
+        width: 8px;
+        position: absolute;
+        top: 100%;
+        border: 3px solid #fff;
+        z-index: 2;
+        background-color: transparent;
+    }
 
 }
 
 /* extra */
 .copyright {
-	text-align: center;
-	margin-top: 0;
-	font-size: 2.5vh;
-	background-color: transparent;
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5vh;
+    background-color: transparent;
 }
+
 .copyright a {
-	display: inline-block;
-	padding: 4px 2px;
+    display: inline-block;
+    padding: 4px 2px;
 }
-.copyright a:not(:last-child):after{
-	content: "/";
-	margin-left: 10px;
+
+.copyright a:not(:last-child):after {
+    content: "/";
+    margin-left: 10px;
 }
 
 .toptal {
-	color: #204ecf;
+    color: #204ecf;
 }
 
 .upstack {
-	color: #008bf7;
+    color: #008bf7;
 }
 
 .upwork {
-	color: #37a000;
+    color: #37a000;
 }
 
 .fiverr {
-	color: #1dbf73;
+    color: #1dbf73;
 }
 
 .jobs {
-	color: magenta;
-	text-decoration: underline;
-	margin-top: -15px;
+    color: magenta;
+    text-decoration: underline;
+    margin-top: -15px;
 }
