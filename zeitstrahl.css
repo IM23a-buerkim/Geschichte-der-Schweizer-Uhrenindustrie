@@ -122,7 +122,7 @@ h2 {
 .timeline-container li small {
 	position: absolute;
 	color: #555;
-	font-size: 13px;
+	font-size: 30px;
 	font-weight: 600;
 	margin-left: 20px;
 }
@@ -171,6 +171,17 @@ h2 {
 	bottom: 0;
 }
 
+ul > li > div {
+	display: flex;
+	flex-direction: column;
+}
+
+ul > li > div > img {
+	height: 50vh;
+	align-self: center;
+	margin: 2vh;
+}
+
 
 /* Responsive CSS */
 @media screen and (max-width: 767px) {
@@ -200,6 +211,7 @@ h2 {
 		left: 3%;
 		margin: 0;
 		right: auto;
+		font-size: 22px;
 	}
 
 	.timeline-container li {
