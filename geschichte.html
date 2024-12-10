@@ -33,7 +33,7 @@
     </article>
     -->
     <div id="geschichte-menu-button" class="geschichte-menu-button" onclick="displaymenu()">
-        <div id="geschichte-menu-symbol" class="geschichte-menu-symbol" >☰</div>
+        <div id="geschichte-menu-symbol" class="geschichte-menu-symbol">☰</div>
         <a href="geschichte.html#header" id="geschichte-menu-button-top" class="geschichte-menu-links">Start</a>
         <a href="index.html" id="geschichte-menu-button-home" class="geschichte-menu-links">Home</a>
         <a href="geschichte.html#footer" id="geschichte-menu-button-ende" class="geschichte-menu-links">Ende</a>
@@ -59,10 +59,43 @@
 
                 <li>
                     <div>
-                        <h2>John Doe</h2>
-                        <small>20th August 2017</small>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quisquam perferendis? Harum,
-                            expedita quod numquam ad</p>
+                        <h2 id="16">Beginn der Uhrenmacherkunst</h2>
+                        <small>16. Jahrhundert</small>
+                        <p>Der Beginn der erfolgreichen und langen Geschichte der Schweizer
+                            Uhrenindustrie fand in der "Hauptstadt der Uhrenmacherkunst" Genf im 16.
+                            Jahrhundert statt. </p>
+                        <a href="16.html">Mehr</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <h2 id="1729">Geburt Perrelet</h2>
+                        <small>Jahr 1729</small>
+                        <p>Abraham-Louis Perrelet der talentierte Handwerker und visionäre Erfinder wurde am 09. Januar
+                            1729 geboren. Der Neuenburger ist der Grossvater von heutigen Automatikuhrwerken.</p>
+                        <a href="1729.html">Mehr</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <h2 id="1770">Erste automatische Uhr</h2>
+                        <small>Jahr 1770</small>
+                        <p>Die faszinierende Erfindung der ersten automatischen Uhr durch den talentierten Uhrmacher
+                            Abraham-Louis Perrelet.</p>
+                        <a href="1770.html">Mehr</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <h2>Rieussec Geburt</h2>
+                        <small>Jahr 1781</small>
+                        <p>Nicolas Mathieu Rieussec einer der wichtigsten Uhrmacher seiner Zeit, wurde am 20. Juli 1781
+                            geboren. Seine Arbeit legte den Grundstein für viele moderne Stoppuhren und
+                            Chronographen.</p>
+                        <a href="1781.html">Mehr</a>
                     </div>
                 </li>
 
@@ -72,15 +105,7 @@
                         <small>20th August 2017</small>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quisquam perferendis? Harum,
                             expedita quod numquam ad</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div>
-                        <h2>John Doe</h2>
-                        <small>20th August 2017</small>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quisquam perferendis? Harum,
-                            expedita quod numquam ad</p>
+                        <a href="1729.html">Mehr</a>
                     </div>
                 </li>
 
@@ -120,6 +145,19 @@
         }
     }
 
+    // Funktion, um die Position des Buttons relativ zum Header zu setzen
+    function updateButtonPosition() {
+        const headerBottom = header.getBoundingClientRect().bottom;
+
+        if (headerBottom > 0) {
+            // Button bleibt unter dem Header
+            button.style.top = `${headerBottom + 10}px`;
+        } else {
+            // Button fixieren, wenn Header nicht sichtbar ist
+            button.style.top = '2vh';
+        }
+    }
+
     // Event-Listener für Scrollen
     window.addEventListener('scroll', () => {
         // Menü schließen beim Scrollen
@@ -127,18 +165,17 @@
             menuOpen = false;
             menuTop.style.display = 'none';
             menuHome.style.display = 'none';
-            ende.style.display = 'none'
-            symbol.innerText = '☰'
+            ende.style.display = 'none';
+            symbol.innerText = '☰';
             button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
         }
 
         // Dynamische Position des Buttons
-        if (window.scrollY > scrollThreshold) {
-            button.style.top = '2vh'; // Neue Position
-        } else {
-            button.style.top = '26vh'; // Startposition
-        }
+        updateButtonPosition();
     });
+
+    // Initiale Position des Buttons setzen
+    updateButtonPosition();
 </script>
 <footer>
     <div id="footer">

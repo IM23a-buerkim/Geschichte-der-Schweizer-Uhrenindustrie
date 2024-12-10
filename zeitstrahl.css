@@ -99,7 +99,7 @@ h2 {
     width: 40%;
     color: black;
     padding: 15px 25px;
-    border-radius: 1px;
+    border-radius: 20px;
 }
 
 .timeline-container li:nth-child(odd) > div {

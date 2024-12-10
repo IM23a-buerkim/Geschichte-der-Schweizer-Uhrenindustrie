@@ -58,7 +58,7 @@ main {
     color: white;
     border-radius: 20px;
     z-index: 500;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .geschichte-menu-symbol {
@@ -135,6 +135,8 @@ main {
 }
 
 .template_article {
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     margin: 5vh auto;
     background-color: lightgray;
@@ -143,16 +145,55 @@ main {
 }
 
 .template_titel {
+    align-self: flex-start;
     background-color: transparent;
     font-size: 5.5dvh;
     font-weight: bold;
     padding: 5dvh 5vw;
+    padding-bottom: 2dvh;
 }
 
 .template_text {
+    align-self: flex-start;
     background-color: transparent;
     padding-left: 5vw;
-    font-size: 3dvh
+    padding-right: 5vw;
+    font-size: 3dvh;
+    margin-bottom: 3dvh;
+}
+
+.template_article div:last-child {
+ padding-bottom: 3dvh;
+}
+
+.template_img {
+    align-self: center;
+    padding: 0 0 5dvh 0;
+    background-color: lightgray;
+    max-width: 60vw;
+    max-height: 60dvh;
+}
+
+.template_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16dvh;
+    background-color: transparent;
+}
+
+.template_link_back {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2dvh 4vw;
+    background: linear-gradient(to left, #1c9654, #0d542d);
+    border-radius: 20px;
+    margin-bottom: 5dvh;
+}
+
+.template_link_back:hover {
+    background: linear-gradient(to left, #1bc96d, #128346);
 }
 
 #footer {
@@ -277,6 +318,16 @@ main {
         margin-left: -50vw;
         z-index: 0;
         overflow: hidden;
+    }
+
+    .template_titel {
+        font-size: 3.1dvh;
+        padding-bottom: 2dvh;
+        padding-top: 2dvh;
+    }
+
+    .template_text {
+        font-size: 2.2dvh;
     }
 
     .geschichte-menu-button {
