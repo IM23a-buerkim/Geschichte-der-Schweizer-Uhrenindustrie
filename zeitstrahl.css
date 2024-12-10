@@ -179,14 +179,18 @@ ul > li > div {
 
 ul > li > div > #img {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow-wrap: break-word;
+    gap: 2dvh;
 }
 
 ul > li > div > #img > img {
     height: 50dvh;
     align-self: center;
-    margin: 2dvh;
+    margin: 2dvh 0;
 }
 
 ul > li > div > a {
@@ -213,6 +217,10 @@ ul > li > div > a:hover {
 
     body {
         font-size: 14px;
+    }
+
+    div::before {
+        display: none;
     }
 
     .timeline-container li:nth-child(odd) > div,
