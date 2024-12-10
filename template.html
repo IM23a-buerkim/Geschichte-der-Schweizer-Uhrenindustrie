@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<body>
+<header>
+    <div id="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1280px-Flag_of_Switzerland.svg.png"
+             alt="Schweizer Flagge">
+        <div id="header-Titel">Geschichte der Schweizer <br>Uhrenindustrie</div>
+    </div>
+    <nav>
+    </nav>
+</header>
+
+<main>
+    <div id="geschichte-menu-buttona" class="geschichte-menu-button" onclick="displaymenu()">
+        <div id="geschichte-menu-symbola" class="geschichte-menu-symbol">☰</div>
+        <a href="geschichte.html#1355" id="geschichte-menu-button-topa" class="geschichte-menu-links">Zurück</a>
+        <a href="index.html" id="geschichte-menu-button-homea" class="geschichte-menu-links">Home</a>
+    </div>
+    <script>
+        const menuButtona = document.getElementById('geschichte-menu-buttona');
+        const menuTopa = document.getElementById('geschichte-menu-button-topa');
+        const menuHomea = document.getElementById('geschichte-menu-button-homea');
+        const headera = document.getElementById('header');
+        const buttona = document.getElementById('geschichte-menu-buttona');
+        const symbola = document.getElementById('geschichte-menu-symbola');
+
+
+        let menuOpena = false; // Zustand des Menüs
+        const scrollThreshold = headera.offsetHeight; // Dynamische Berechnung der Header-Höhe
+
+        // Funktion zum Umschalten des Menüs
+        function displaymenu() {
+            menuOpena = !menuOpena; // Zustand ändern
+            const displayValue = menuOpena ? 'block' : 'none';
+            menuTopa.style.display = displayValue;
+            menuHomea.style.display = displayValue;
+            symbolmenux()
+        }
+
+        function symbolmenux() {
+            if (menuOpena === true) {
+                symbola.innerText = ''
+                buttona.style.backgroundImage = `linear-gradient(to top, #0d542d 20%, #1c9654 80%)`;
+            } else {
+                symbola.innerText = '☰'
+                buttona.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
+            }
+        }
+
+        // Event-Listener für Scrollen
+        window.addEventListener('scroll', () => {
+            // Menü schließen beim Scrollen
+            if (menuOpena) {
+                menuOpena = false;
+                menuTopa.style.display = 'none';
+                menuHomea.style.display = 'none';
+                symbola.innerText = '☰'
+                buttona.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
+            }
+            /*
+            // Dynamische Position des Buttons
+            if (window.scrollY > scrollThreshold) {
+                button.style.top = '2vh'; // Neue Position
+            } else {
+                button.style.top = '26vh'; // Startposition
+            }
+             */
+        });
+    </script>
+    <div class="template_box">
+        <article class="template_article">
+            <div class="template_titel">Text</div>
+            <div class="template_text">Text</div>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div id="footer">
+        <a id="footer_main" class="footer_link" href="index.html">Home</a>
+        <a id="footer_geschichte" class="footer_link" href="geschichte.html">Geschichte</a>
+        <a id="footer_impressum" href="impressum.html">Impressum</a>
+    </div>
+</footer>
+</body>
+</html>

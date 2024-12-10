@@ -46,7 +46,7 @@ main {
     justify-content: space-evenly;
 }
 
-#geschichte-menu-button {
+.geschichte-menu-button {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -58,6 +58,10 @@ main {
     border-radius: 20px;
     z-index: 500;
     transition-duration: 0.5s;
+}
+
+.geschichte-menu-symbol {
+    background-color: transparent;
 }
 
 .geschichte-menu-links {
@@ -123,6 +127,33 @@ main {
     padding-top: 5dvh;
 }
 
+.template_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_article {
+    width: 80vw;
+    margin: 5vh auto;
+    background-color: lightgray;
+    min-height: 50vh;
+    border-radius: 20px;
+}
+
+.template_titel {
+    background-color: transparent;
+    font-size: 5.5dvh;
+    font-weight: bold;
+    padding: 5dvh 5vw;
+}
+
+.template_text {
+    background-color: transparent;
+    padding-left: 5vw;
+    font-size: 3dvh
+}
+
 #footer {
     width: 100%;
     background-image: linear-gradient(#13834b, #05381d);
@@ -169,7 +200,7 @@ main {
         width: 35dvh;
     }
 
-    #geschichte-menu-button {
+    .geschichte-menu-button {
         top: 26dvh;
         padding: 1dvh 2vw;
         font-size: 3dvh;
@@ -247,7 +278,7 @@ main {
         overflow: hidden;
     }
 
-    #geschichte-menu-button {
+    .geschichte-menu-button {
         top: 26dvh;
         padding: 1dvh 3vw;
         font-size: 2.5dvh;

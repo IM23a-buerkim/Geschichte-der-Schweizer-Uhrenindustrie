@@ -219,9 +219,11 @@ ul > li > div > a:hover {
         font-size: 14px;
     }
 
+    /*
     div::before {
         display: none;
     }
+     */
 
     .timeline-container li:nth-child(odd) > div,
     .timeline-container li:nth-child(even) > div {
