@@ -227,6 +227,7 @@ ul > li > div > a:hover {
     .timeline-container li:nth-child(even) > div {
         float: right;
         width: 95%;
+        padding: 15px 15px;
     }
 
     .timeline-container li:first-child div:after,
@@ -245,7 +246,7 @@ ul > li > div > a:hover {
     .timeline-container li small,
     .timeline-container li:nth-child(even) small {
         top: 0;
-        left: 3%;
+        left: 5%;
         margin: 0;
         right: auto;
         font-size: 22px;
@@ -265,6 +266,35 @@ ul > li > div > a:hover {
         border: 3px solid #fff;
         z-index: 2;
         background-color: transparent;
+    }
+
+    .timeline-container li:nth-child(odd) > div,
+    .timeline-container li:nth-child(even) > div {
+        float: none;
+        width: 100%; /* Changed to full width */
+        margin-left: 20px; /* Added left margin */
+    }
+
+    #body {
+        padding: 8dvh 1dvh 8dvh 3dvh; /* Reduced side padding */
+    }
+
+    .timeline-container:after {
+        left: 0; /* Moved timeline to the left */
+    }
+
+    .timeline-container li:before {
+        left: 0; /* Moved squares to the left */
+        transform: translateX(-50%);
+    }
+
+    .timeline-container li small {
+        left: 20px; /* Moved date to the right */
+        width: auto;
+    }
+
+    .timeline-container li > div {
+        max-width: calc(100% - 40px); /* Limited maximum width */
     }
 
 }
