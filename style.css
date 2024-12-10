@@ -12,7 +12,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 #header {
@@ -26,7 +26,7 @@ body {
 
 #header > img {
     background-color: transparent;
-    border-radius: 1vh;
+    border-radius: 1dvh;
 }
 
 #header-Titel {
@@ -89,7 +89,7 @@ main {
 
 #geschichte-text {
     background-color: transparent;
-    padding-bottom: 9vh;
+    padding-bottom: 9dvh;
 }
 
 #geschichte-link {
@@ -111,16 +111,16 @@ main {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10vh;
+    padding-top: 10dvh;
 }
 
 .impressum_text {
-    font-size: 3vh;
+    font-size: 3dvh;
     text-align: center;
 }
 
 #impressum_text2 {
-    padding-top: 5vh;
+    padding-top: 5dvh;
 }
 
 #footer {
@@ -143,71 +143,71 @@ main {
     text-decoration: none;
     background-color: transparent;
     color: white;
-    padding-left: 3vh;
+    padding-left: 3dvh;
 }
 
 /* Media Query for Screens 768px and Wider */
 @media screen and (min-width: 768px) {
     #header {
-        height: 25vh;
+        height: 25dvh;
     }
 
     #header > img {
-        height: 10vh;
+        height: 10dvh;
         margin-right: 5%;
     }
 
     #header-Titel {
-        font-size: 8vh;
+        font-size: 8dvh;
     }
 
     #main-article {
-        height: 60vh;
+        height: 60dvh;
     }
 
     #uhr {
-        width: 35vh;
+        width: 35dvh;
     }
 
     #geschichte-menu-button {
-        top: 26vh;
-        padding: 1vh 2vw;
-        font-size: 3vh;
+        top: 26dvh;
+        padding: 1dvh 2vw;
+        font-size: 3dvh;
     }
 
     .geschichte-menu-links {
-        font-size: 2.5vh;
-        padding: 1vh 1vw;
+        font-size: 2.5dvh;
+        padding: 1dvh 1vw;
     }
 
     #geschichte-abschnitt {
         width: 25%;
-        height: 35vh;
+        height: 35dvh;
     }
 
     #geschichte-titel {
-        font-size: 5vh;
-        margin: 3vh;
+        font-size: 5dvh;
+        margin: 3dvh;
     }
 
     #geschichte-text {
-        font-size: 2.25vh;
+        font-size: 2.25dvh;
     }
 
     #geschichte-link {
-        font-size: 2vh;
-        padding: 0.8vh 4vh;
-        margin: 2vh;
+        font-size: 2dvh;
+        padding: 0.8dvh 4dvh;
+        margin: 2dvh;
     }
 
     #footer {
-        height: 12vh;
-        padding-top: 5vh;
-        font-size: 2.5vh;
+        height: 12dvh;
+        padding-top: 5dvh;
+        font-size: 2.5dvh;
     }
 
     #footer_übersichtA {
-        padding-bottom: 0.5vh;
+        padding-bottom: 0.5dvh;
     }
 }
 
@@ -219,92 +219,92 @@ main {
 
     #header {
         flex-direction: column;
-        height: 25vh;
+        height: 25dvh;
     }
 
     #header > img {
         height: 6vw;
-        margin-bottom: 1vh;
+        margin-bottom: 1dvh;
     }
 
     #header-Titel {
-        font-size: clamp(8px, 50vw, 5vh);
+        font-size: clamp(8px, 50vw, 5dvh);
         width: 70vw;
     }
 
     #main-article {
-        height: 60vh;
+        height: 60dvh;
         position: relative;
         overflow: hidden;
     }
 
     #uhr {
         position: absolute;
-        height: 50vh;
-        margin-top: -25vh;
+        height: 50dvh;
+        margin-top: -25dvh;
         margin-left: -50vw;
         z-index: 0;
         overflow: hidden;
     }
 
     #geschichte-menu-button {
-        top: 26vh;
-        padding: 1vh 3vw;
-        font-size: 2.5vh;
+        top: 26dvh;
+        padding: 1dvh 3vw;
+        font-size: 2.5dvh;
     }
 
     .geschichte-menu-links {
-        font-size: 3vh;
-        padding: 1vh 3vw;
+        font-size: 3dvh;
+        padding: 1dvh 3vw;
     }
 
     #geschichte-abschnitt {
         opacity: 95%;
         margin-right: -10vw;
         width: 80vw;
-        height: 35vh;
+        height: 35dvh;
         z-index: 5;
     }
 
     #geschichte-titel {
-        font-size: 5vh;
-        margin: 3vh;
+        font-size: 5dvh;
+        margin: 3dvh;
     }
 
     #geschichte-text {
-        padding-bottom: 9vh;
-        font-size: 2.25vh;
+        padding-bottom: 9dvh;
+        font-size: 2.25dvh;
     }
 
     #geschichte-link {
-        font-size: 2vh;
-        padding: 0.8vh 4vh;
-        margin: 2vh;
+        font-size: 2dvh;
+        padding: 0.8dvh 4dvh;
+        margin: 2dvh;
     }
 
     .impressum_text {
-        font-size: 2vh;
+        font-size: 2dvh;
         margin: 2vw;
     }
 
     .copyright > p, .copyright a {
-        font-size: 1.6vh;
+        font-size: 1.6dvh;
     }
 
     #footer {
-        height: 12vh;
-        padding-top: 5vh;
-        font-size: 2.5vh;
+        height: 12dvh;
+        padding-top: 5dvh;
+        font-size: 2.5dvh;
     }
 
     #footer_übersichtA {
-        padding-bottom: 0.5vh;
+        padding-bottom: 0.5dvh;
     }
 }
 
 @media screen and (max-width: 315px) {
     #header-Titel {
-        font-size: 4vh;
+        font-size: 4dvh;
     }
 
     #header > img {
