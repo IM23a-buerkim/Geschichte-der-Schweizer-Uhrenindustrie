@@ -23,7 +23,7 @@ ul {
     color: #444;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
-    padding: 8vh 10vh;
+    padding: 8dvh 10dvh;
     letter-spacing: .02em;
     background: transparent;
 }
@@ -184,9 +184,9 @@ ul > li > div > #img {
 }
 
 ul > li > div > #img > img {
-    height: 50vh;
+    height: 50dvh;
     align-self: center;
-    margin: 2vh;
+    margin: 2dvh;
 }
 
 ul > li > div > a {
@@ -265,7 +265,7 @@ ul > li > div > a:hover {
 .copyright {
     text-align: center;
     margin-top: 0;
-    font-size: 2.5vh;
+    font-size: 2.5dvh;
     background-color: transparent;
 }
 
