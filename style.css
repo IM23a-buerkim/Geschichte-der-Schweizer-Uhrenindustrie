@@ -1,6 +1,5 @@
 /* Common Styles (Applied to Both Media Queries) */
 * {
-    background-color: white;
     font-family: Arial, serif;
     box-sizing: border-box;
     margin: 0;
@@ -113,19 +112,50 @@ main {
 
 #impressum_section1 {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10dvh;
 }
 
 .impressum_text {
+    padding: 6dvh 10vw;
     font-size: 3dvh;
-    text-align: center;
+    text-align: left;
+    background-color: lightgray;
+    width: 80vw;
+    min-height: 10dvh;
+    margin: 5dvh auto;
+    border-radius: 30px;
 }
 
 #impressum_text2 {
-    padding-top: 5dvh;
+
+}
+
+#impressum_links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%
+}
+
+.impressum_link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2dvh 4vw;
+    background: linear-gradient(to left, #1c9654, #0d542d);
+    border-radius: 20px;
+    margin-bottom: 5dvh;
+}
+
+#impressum_text2, #impressum_text3 {
+    background-color: transparent !important;
+    padding: 4dvh 5vw;
+    margin: 0;
+}
+
+#template_article2 {
+    min-height: 10dvh !important;
 }
 
 .template_box {
@@ -163,7 +193,7 @@ main {
 }
 
 .template_article div:last-child {
- padding-bottom: 3dvh;
+    padding-bottom: 3dvh;
 }
 
 .template_img {
@@ -174,7 +204,7 @@ main {
     max-height: 60dvh;
 }
 
-.template_back{
+.template_back {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,7 +331,7 @@ main {
     }
 
     #header-Titel {
-        font-size: clamp(8px, 50vw, 5dvh);
+        font-size: clamp(8px, 50vw, 4dvh);
         width: 70vw;
     }
 
@@ -318,6 +348,10 @@ main {
         margin-left: -50vw;
         z-index: 0;
         overflow: hidden;
+    }
+
+    #impressum_links {
+        width: 100%;
     }
 
     .template_titel {

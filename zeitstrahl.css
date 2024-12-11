@@ -311,32 +311,39 @@ ul > li > div > a:hover {
 
 .copyright a {
     display: inline-block;
+    align-self: center;
     padding: 4px 2px;
 }
 
 .copyright a:not(:last-child):after {
     content: "/";
     margin-left: 10px;
+    background-color: transparent;
 }
 
 .toptal {
     color: #204ecf;
+    background-color: transparent;
 }
 
 .upstack {
     color: #008bf7;
+    background-color: transparent;
 }
 
 .upwork {
     color: #37a000;
+    background-color: transparent;
 }
 
 .fiverr {
     color: #1dbf73;
+    background-color: transparent;
 }
 
 .jobs {
     color: magenta;
     text-decoration: underline;
     margin-top: -15px;
+    background-color: transparent;
 }
