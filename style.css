@@ -159,7 +159,7 @@ main {
 }
 
 #template_article2 {
-    min-height: 10svh !important;
+    min-height: 10lvh !important;
 }
 
 .template_box {
@@ -172,19 +172,19 @@ main {
     display: flex;
     flex-direction: column;
     width: 80vw;
-    margin: 5vh auto;
+    margin: 5lvh auto;
     background-color: lightgray;
-    min-height: 50vh;
+    min-height: 50lvh;
     border-radius: 20px;
 }
 
 .template_titel {
     align-self: flex-start;
     background-color: transparent;
-    font-size: 5.5svh;
+    font-size: 5.5lvh;
     font-weight: bold;
-    padding: 5svh 5vw;
-    padding-bottom: 2svh;
+    padding: 5lvh 5vw;
+    padding-bottom: 2lvh;
 }
 
 #template_titel_bilder {
@@ -196,27 +196,27 @@ main {
     background-color: transparent;
     padding-left: 5vw;
     padding-right: 5vw;
-    font-size: 3svh;
-    margin-bottom: 3svh;
+    font-size: 3lvh;
+    margin-bottom: 3lvh;
 }
 
 .template_article div:last-child {
-    padding-bottom: 3svh;
+    padding-bottom: 3lvh;
 }
 
 .template_img {
     align-self: center;
-    padding: 0 0 5svh 0;
+    padding: 0 0 5lvh 0;
     background-color: lightgray;
     max-width: 60vw;
-    max-height: 60svh;
+    max-height: 60lvh;
 }
 
 .template_back {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 16svh;
+    height: 16lvh;
     background-color: transparent;
 }
 
@@ -224,10 +224,10 @@ main {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 2svh 4vw;
+    padding: 2lvh 4vw;
     background: linear-gradient(to left, #1c9654, #0d542d);
     border-radius: 20px;
-    margin-bottom: 5svh;
+    margin-bottom: 5lvh;
 }
 
 .template_link_back:hover {
@@ -366,13 +366,13 @@ main {
     }
 
     .template_titel {
-        font-size: 3.1svh;
-        padding-bottom: 2svh;
-        padding-top: 2svh;
+        font-size: 3.1lvh;
+        padding-bottom: 2lvh;
+        padding-top: 2lvh;
     }
 
     .template_text {
-        font-size: 2.2svh;
+        font-size: 2.2lvh;
     }
 
     .geschichte-menu-button {
