@@ -387,7 +387,7 @@ main {
     }
 
     #geschichte-abschnitt {
-        opacity: 95%;
+        opacity: 90%;
         margin-right: -10vw;
         width: 80vw;
         min-height: 35svh;
@@ -453,4 +453,130 @@ main {
     #header > img {
         border-radius: 5px;
     }
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 60svh;
+    background: transparent;
+    margin: 0;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 20px solid black;
+    border-radius: 50%;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* Fix for the hands positioning */
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    height: 6px;
+}
+
+.minute-hand {
+    height: 4px;
+}
+
+.second-hand {
+    height: 2px;
+    background: red;
+}
+
+.number {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
+
+.number1 {
+    top: 10%;
+    left: 74%;
+}
+
+.number2 {
+    top: 26%;
+    left: 92%;
+}
+
+.number3 {
+    top: 51%;
+    left: 97%;
+}
+
+.number4 {
+    top: 75%;
+    left: 92%;
+}
+
+.number5 {
+    top: 92%;
+    left: 75%;
+}
+
+.number6 {
+    top: 99%;
+    left: 50%;
+}
+
+.number7 {
+    top: 92%;
+    left: 28%;
+}
+
+.number8 {
+    top: 75%;
+    left: 8%;
+}
+
+.number9 {
+    top: 51%;
+    left: 2%;
+}
+
+.number10 {
+    top: 27%;
+    left: 10%;
+}
+
+.number11 {
+    top: 10%;
+    left: 25%;
+}
+
+.number12 {
+    top: 5%;
+    left: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    position: absolute;
+    height: 50svh;
+    margin-top: -25svh;
+    margin-left: -50vw;
+    z-index: 0;
+    overflow: hidden;
 }
