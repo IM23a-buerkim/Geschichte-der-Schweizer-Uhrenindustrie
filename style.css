@@ -491,6 +491,10 @@ main {
 
 .hour-hand {
     height: 6px;
+    width: 30%;
+    transform-origin: 90%;
+    top: 52%;
+    left: 24%;
 }
 
 .minute-hand {
