@@ -187,6 +187,10 @@ main {
     padding-bottom: 2svh;
 }
 
+#template_titel_bilder {
+    padding-left: 0 !important;
+}
+
 .template_text {
     align-self: flex-start;
     background-color: transparent;
