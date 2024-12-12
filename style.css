@@ -425,6 +425,10 @@ main {
     #footer_übersichtA {
         padding-bottom: 0.5dvh;
     }
+
+    #footer_main {
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 460px) {
