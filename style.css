@@ -11,7 +11,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100dvh;
+    min-height: 100svh;
     overflow-y: auto;
 }
 
@@ -26,7 +26,7 @@ body {
 
 #header > img {
     background-color: transparent;
-    border-radius: 1dvh;
+    border-radius: 1svh;
 }
 
 #header-Titel {
@@ -94,7 +94,7 @@ main {
 #geschichte-text {
     display: flex;
     background-color: transparent;
-    padding: 0 2vw 1dvh 2vw;
+    padding: 0 2vw 1svh 2vw;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -122,13 +122,13 @@ main {
 }
 
 .impressum_text {
-    padding: 6dvh 10vw;
-    font-size: 3dvh;
+    padding: 6svh 10vw;
+    font-size: 3svh;
     text-align: left;
     background-color: lightgray;
     width: 80vw;
-    min-height: 10dvh;
-    margin: 5dvh auto;
+    min-height: 10svh;
+    margin: 5svh auto;
     border-radius: 30px;
 }
 
@@ -146,20 +146,20 @@ main {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 2dvh 4vw;
+    padding: 2svh 4vw;
     background: linear-gradient(to left, #1c9654, #0d542d);
     border-radius: 20px;
-    margin-bottom: 5dvh;
+    margin-bottom: 5svh;
 }
 
 #impressum_text2, #impressum_text3 {
     background-color: transparent !important;
-    padding: 4dvh 5vw;
+    padding: 4svh 5vw;
     margin: 0;
 }
 
 #template_article2 {
-    min-height: 10dvh !important;
+    min-height: 10svh !important;
 }
 
 .template_box {
@@ -181,10 +181,10 @@ main {
 .template_titel {
     align-self: flex-start;
     background-color: transparent;
-    font-size: 5.5dvh;
+    font-size: 5.5svh;
     font-weight: bold;
-    padding: 5dvh 5vw;
-    padding-bottom: 2dvh;
+    padding: 5svh 5vw;
+    padding-bottom: 2svh;
 }
 
 .template_text {
@@ -192,27 +192,27 @@ main {
     background-color: transparent;
     padding-left: 5vw;
     padding-right: 5vw;
-    font-size: 3dvh;
-    margin-bottom: 3dvh;
+    font-size: 3svh;
+    margin-bottom: 3svh;
 }
 
 .template_article div:last-child {
-    padding-bottom: 3dvh;
+    padding-bottom: 3svh;
 }
 
 .template_img {
     align-self: center;
-    padding: 0 0 5dvh 0;
+    padding: 0 0 5svh 0;
     background-color: lightgray;
     max-width: 60vw;
-    max-height: 60dvh;
+    max-height: 60svh;
 }
 
 .template_back {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 16dvh;
+    height: 16svh;
     background-color: transparent;
 }
 
@@ -220,10 +220,10 @@ main {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 2dvh 4vw;
+    padding: 2svh 4vw;
     background: linear-gradient(to left, #1c9654, #0d542d);
     border-radius: 20px;
-    margin-bottom: 5dvh;
+    margin-bottom: 5svh;
 }
 
 .template_link_back:hover {
@@ -250,74 +250,74 @@ main {
     text-decoration: none;
     background-color: transparent;
     color: white;
-    padding-left: 3dvh;
+    padding-left: 3svh;
 }
 
 /* Media Query for Screens 768px and Wider */
 @media screen and (min-width: 768px) {
     #header {
-        height: 25dvh;
+        height: 25svh;
     }
 
     #header > img {
-        height: 10dvh;
+        height: 10svh;
         margin-right: 5%;
     }
 
     #header-Titel {
-        font-size: 8dvh;
+        font-size: 8svh;
     }
 
     #main-article {
-        height: 60dvh;
+        height: 60svh;
     }
 
     #uhr {
-        width: 35dvh;
+        width: 35svh;
     }
 
     .geschichte-menu-button {
-        top: 26dvh;
-        padding: 1dvh 2vw;
-        font-size: 3dvh;
+        top: 26svh;
+        padding: 1svh 2vw;
+        font-size: 3svh;
     }
 
     .geschichte-menu-links {
-        font-size: 2.5dvh;
-        padding: 1dvh 1vw;
+        font-size: 2.5svh;
+        padding: 1svh 1vw;
     }
 
     #geschichte-abschnitt {
         width: 40%;
-        min-height: 35dvh;
-        margin-bottom: -2dvh;
+        min-height: 35svh;
+        margin-bottom: -2svh;
     }
 
     #geschichte-titel {
-        font-size: 5dvh;
-        margin: 3dvh;
+        font-size: 5svh;
+        margin: 3svh;
     }
 
     #geschichte-text {
-        font-size: 2.25dvh;
-        min-height: 15dvh;
-        max-height: 38dvh;
+        font-size: 2.25svh;
+        min-height: 15svh;
+        max-height: 38svh;
     }
 
     #geschichte-link {
-        font-size: 2dvh;
-        padding: 0.8dvh 4dvh;
-        margin: 2dvh;
+        font-size: 2svh;
+        padding: 0.8svh 4svh;
+        margin: 2svh;
     }
 
     #footer {
-        height: 12dvh;
-        padding-top: 5dvh;
-        font-size: 2.5dvh;
+        height: 12svh;
+        padding-top: 5svh;
+        font-size: 2.5svh;
     }
 
     #footer_übersichtA {
-        padding-bottom: 0.5dvh;
+        padding-bottom: 0.5svh;
     }
 }
 
@@ -329,29 +329,29 @@ main {
 
     #header {
         flex-direction: column;
-        height: 25dvh;
+        height: 25svh;
     }
 
     #header > img {
         height: 6vw;
-        margin-bottom: 1dvh;
+        margin-bottom: 1svh;
     }
 
     #header-Titel {
-        font-size: clamp(8px, 50vw, 4dvh);
+        font-size: clamp(8px, 50vw, 4svh);
         width: 70vw;
     }
 
     #main-article {
-        height: 60dvh;
+        height: 60svh;
         position: relative;
         overflow: hidden;
     }
 
     #uhr {
         position: absolute;
-        height: 50dvh;
-        margin-top: -25dvh;
+        height: 50svh;
+        margin-top: -25svh;
         margin-left: -50vw;
         z-index: 0;
         overflow: hidden;
@@ -362,68 +362,68 @@ main {
     }
 
     .template_titel {
-        font-size: 3.1dvh;
-        padding-bottom: 2dvh;
-        padding-top: 2dvh;
+        font-size: 3.1svh;
+        padding-bottom: 2svh;
+        padding-top: 2svh;
     }
 
     .template_text {
-        font-size: 2.2dvh;
+        font-size: 2.2svh;
     }
 
     .geschichte-menu-button {
-        top: 26dvh;
-        padding: 1dvh 3vw;
-        font-size: 2.5dvh;
+        top: 26svh;
+        padding: 1svh 3vw;
+        font-size: 2.5svh;
     }
 
     .geschichte-menu-links {
-        font-size: 3dvh;
-        padding: 1dvh 3vw;
+        font-size: 3svh;
+        padding: 1svh 3vw;
     }
 
     #geschichte-abschnitt {
         opacity: 95%;
         margin-right: -10vw;
         width: 80vw;
-        min-height: 35dvh;
-        max-height: 55dvh;
+        min-height: 35svh;
+        max-height: 55svh;
         z-index: 5;
     }
 
     #geschichte-titel {
-        font-size: 5dvh;
-        margin: 2dvh;
+        font-size: 5svh;
+        margin: 2svh;
     }
 
     #geschichte-text {
-        padding-bottom: 2dvh;
-        font-size: 2.25dvh;
+        padding-bottom: 2svh;
+        font-size: 2.25svh;
     }
 
     #geschichte-link {
-        font-size: 2dvh;
-        padding: 0.8dvh 4dvh;
-        margin: 2dvh;
+        font-size: 2svh;
+        padding: 0.8svh 4svh;
+        margin: 2svh;
     }
 
     .impressum_text {
-        font-size: 2dvh;
+        font-size: 2svh;
         margin: 2vw;
     }
 
     .copyright > p, .copyright a {
-        font-size: 1.6dvh;
+        font-size: 1.6svh;
     }
 
     #footer {
-        height: 15dvh;
-        padding-top: 5dvh;
-        font-size: 2.5dvh;
+        height: 15svh;
+        padding-top: 5svh;
+        font-size: 2.5svh;
     }
 
     #footer_übersichtA {
-        padding-bottom: 0.5dvh;
+        padding-bottom: 0.5svh;
     }
 
     #footer_main {
@@ -433,17 +433,17 @@ main {
 
 @media screen and (max-width: 460px) {
     #geschichte-text {
-        font-size: 2dvh;
+        font-size: 2svh;
     }
 
     #geschichte-titel {
-        font-size: 4dvh;
+        font-size: 4svh;
     }
 }
 
 @media screen and (max-width: 315px) {
     #header-Titel {
-        font-size: 4dvh;
+        font-size: 4svh;
     }
 
     #header > img {

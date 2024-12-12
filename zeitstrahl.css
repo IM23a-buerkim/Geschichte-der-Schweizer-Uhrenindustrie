@@ -23,7 +23,7 @@ ul {
     color: #444;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
-    padding: 8dvh 10dvh;
+    padding: 8svh 10svh;
     letter-spacing: .02em;
     background: transparent;
 }
@@ -184,13 +184,13 @@ ul > li > div > #img {
     justify-content: center;
     align-items: center;
     overflow-wrap: break-word;
-    gap: 2dvh;
+    gap: 2svh;
 }
 
 ul > li > div > #img > img {
-    height: 50dvh;
+    height: 50svh;
     align-self: center;
-    margin: 2dvh 0;
+    margin: 2svh 0;
 }
 
 ul > li > div > a {
@@ -278,7 +278,7 @@ ul > li > div > a:hover {
     }
 
     #body {
-        padding: 8dvh 1dvh 8dvh 3dvh; /* Reduced side padding */
+        padding: 8svh 1svh 8svh 3svh; /* Reduced side padding */
     }
 
     .timeline-container:after {
@@ -305,7 +305,7 @@ ul > li > div > a:hover {
 .copyright {
     text-align: center;
     margin-top: 0;
-    font-size: 2.5dvh;
+    font-size: 2.5svh;
     background-color: transparent;
 }
 
