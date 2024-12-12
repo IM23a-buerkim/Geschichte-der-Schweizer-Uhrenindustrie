@@ -92,8 +92,12 @@ main {
 }
 
 #geschichte-text {
+    display: flex;
     background-color: transparent;
-    padding-bottom: 9dvh;
+    padding: 0 2vw 1dvh 2vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #geschichte-link {
@@ -284,8 +288,9 @@ main {
     }
 
     #geschichte-abschnitt {
-        width: 25%;
-        height: 35dvh;
+        width: 40%;
+        min-height: 35dvh;
+        margin-bottom: -2dvh;
     }
 
     #geschichte-titel {
@@ -295,6 +300,8 @@ main {
 
     #geschichte-text {
         font-size: 2.25dvh;
+        min-height: 15dvh;
+        max-height: 38dvh;
     }
 
     #geschichte-link {
@@ -379,17 +386,18 @@ main {
         opacity: 95%;
         margin-right: -10vw;
         width: 80vw;
-        height: 35dvh;
+        min-height: 35dvh;
+        max-height: 55dvh;
         z-index: 5;
     }
 
     #geschichte-titel {
         font-size: 5dvh;
-        margin: 3dvh;
+        margin: 2dvh;
     }
 
     #geschichte-text {
-        padding-bottom: 9dvh;
+        padding-bottom: 2dvh;
         font-size: 2.25dvh;
     }
 
@@ -416,6 +424,16 @@ main {
 
     #footer_übersichtA {
         padding-bottom: 0.5dvh;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #geschichte-text {
+        font-size: 2dvh;
+    }
+
+    #geschichte-titel {
+        font-size: 4dvh;
     }
 }
 
