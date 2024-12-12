@@ -132,10 +132,6 @@ main {
     border-radius: 30px;
 }
 
-#impressum_text2 {
-
-}
-
 #impressum_links {
     display: flex;
     justify-content: space-evenly;
@@ -152,9 +148,9 @@ main {
     margin-bottom: 5svh;
 }
 
-#impressum_text2, #impressum_text3 {
+#impressum_text2, #impressum_text3, #impressum_text4, #impressum_text5 {
     background-color: transparent !important;
-    padding: 4svh 5vw;
+    padding: 4svh 5vw !important;
     margin: 0;
 }
 
