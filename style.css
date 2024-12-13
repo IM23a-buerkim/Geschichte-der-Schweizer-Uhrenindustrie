@@ -492,9 +492,9 @@ main {
 .hour-hand {
     height: 6px;
     width: 30%;
-    transform-origin: 90%;
-    top: 52%;
-    left: 24%;
+    transform-origin: 100%;
+    top: 50%;
+    left: 20%;
 }
 
 .minute-hand {
