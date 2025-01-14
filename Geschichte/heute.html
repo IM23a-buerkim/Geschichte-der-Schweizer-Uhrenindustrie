@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<body>
+<header>
+    <div id="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1280px-Flag_of_Switzerland.svg.png"
+             alt="Schweizer Flagge">
+        <div id="header-Titel">Geschichte der Schweizer <br>Uhrenindustrie</div>
+    </div>
+    <nav>
+    </nav>
+</header>
+
+<main>
+    <div id="geschichte-menu-button" class="geschichte-menu-button" onclick="displaymenu()">
+        <div id="geschichte-menu-symbol" class="geschichte-menu-symbol">☰</div>
+        <a href="heute.html#header" id="geschichte-menu-button-top" class="geschichte-menu-links">Start</a>
+        <a href="../index.html" id="geschichte-menu-button-home" class="geschichte-menu-links">Home</a>
+        <a href="../geschichte.html#heute" id="geschichte-menu-button-ende" class="geschichte-menu-links">Zurück</a>
+    </div>
+    <div class="template_box">
+        <article class="template_article">
+            <div class="template_titel">Schweizer Uhren</div>
+            <div class="Marken">
+                <div class="Marke">
+                    <div class="Marke_T">Rolex</div>
+                    <img src="https://wallpapercave.com/wp/wp3274958.jpg">
+                    <a href="https://www.rolex.com/de" target="_blank">Zu Rolex</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">Omega</div>
+                    <img src="https://welche-uhr.de/wp-content/uploads/2021/11/OMEGA-Uhren-Logo.jpg">
+                    <a href="https://www.omegawatches.com/de-ch/" target="_blank">Zu Omega</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">Swatch</div>
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f4cb62153409483.632f1d5c30cef.png">
+                    <a href="https://www.swatch.com/de-ch/" target="_blank">Zu Swatch</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">Tissot</div>
+                    <img src="https://3.bp.blogspot.com/-XCNVp7seIrY/U4SiXosWpII/AAAAAAAAPnw/LaJdzuWdqGs/s1600/logo+Tissot+colour+black.jpg">
+                    <a href="https://www.tissotwatches.com/" target="_blank">Zu Tissot</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">TAG Heuer</div>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.Cy1ZIJiLMkio3X-NrYeB_QHaEa&rs=1&pid=ImgDetMain">
+                    <a href="https://www.tagheuer.com/de/de/" target="_blank">Zu TAG Heuer</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">IWC</div>
+                    <img src="https://logodix.com/logo/780055.jpg">
+                    <a href="https://www.iwc.com/ch/de/home.html" target="_blank">Zu IWC</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">Longines</div>
+                    <img src="https://cdn.shopify.com/s/files/1/0357/7957/5948/files/brand_longines_sp.jpg?v=1687660747">
+                    <a href="https://www.longines.com/de-ch/" target="_blank">Zu Longines</a>
+                </div>
+                <div class="Marke">
+                    <div class="Marke_T">Weitere</div>
+                    <img src="https://thumbs.dreamstime.com/z/luxury-watches-logos-vector-brand-collection-most-famous-producers-world-eps-file-available-58381137.jpg?w=360">
+                    <a href="https://uhrdex.de/schweizer-uhren/" target="_blank">Weitere</a>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="template_back">
+        <a class="template_link_back" href="../geschichte.html#heute">Zurück</a>
+    </div>
+</main>
+<script>
+    const menuButton = document.getElementById('geschichte-menu-button');
+    const menuTop = document.getElementById('geschichte-menu-button-top');
+    const menuHome = document.getElementById('geschichte-menu-button-home');
+    const header = document.getElementById('header');
+    const button = document.getElementById('geschichte-menu-button');
+    const symbol = document.getElementById('geschichte-menu-symbol');
+    const ende = document.getElementById('geschichte-menu-button-ende')
+
+    let menuOpen = false; // Zustand des Menüs
+    const scrollThreshold = header.offsetHeight; // Dynamische Berechnung der Header-Höhe
+
+    // Funktion zum Umschalten des Menüs
+    function displaymenu() {
+        menuOpen = !menuOpen; // Zustand ändern
+        const displayValue = menuOpen ? 'block' : 'none';
+        menuTop.style.display = displayValue;
+        menuHome.style.display = displayValue;
+        ende.style.display = displayValue;
+        symbolmenu()
+    }
+
+    function symbolmenu() {
+        if (menuOpen === true) {
+            symbol.innerText = ''
+            button.style.backgroundImage = `linear-gradient(to top, #0d542d 20%, #1c9654 80%)`;
+        } else {
+            symbol.innerText = '☰'
+            button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
+        }
+    }
+
+    // Funktion, um die Position des Buttons relativ zum Header zu setzen
+    function updateButtonPosition() {
+        const headerBottom = header.getBoundingClientRect().bottom;
+
+        if (headerBottom > 0) {
+            // Button bleibt unter dem Header
+            button.style.top = `${headerBottom + 10}px`;
+        } else {
+            // Button fixieren, wenn Header nicht sichtbar ist
+            button.style.top = '2vh';
+        }
+    }
+
+    // Event-Listener für Scrollen
+    window.addEventListener('scroll', () => {
+        // Menü schließen beim Scrollen
+        if (menuOpen) {
+            menuOpen = false;
+            menuTop.style.display = 'none';
+            menuHome.style.display = 'none';
+            ende.style.display = 'none';
+            symbol.innerText = '☰';
+            button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
+        }
+
+        // Dynamische Position des Buttons
+        updateButtonPosition();
+    });
+
+    // Initiale Position des Buttons setzen
+    updateButtonPosition();
+</script>
+
+<footer>
+    <div id="footer">
+        <a id="footer_main" class="footer_link" href="../index.html">Home</a>
+        <a id="footer_geschichte" class="footer_link" href="../geschichte.html">Geschichte</a>
+        <a id="footer_impressum" href="../impressum.html">Impressum</a>
+    </div>
+</footer>
+</body>
+</html>
