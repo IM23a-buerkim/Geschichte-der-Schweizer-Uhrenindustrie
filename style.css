@@ -682,6 +682,7 @@ main {
     width: 40vw;
     height: 10dvh;
     font-size: 5vh;
+    color: black;
 }
 
 #Bestscore {
