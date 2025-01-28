@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<body>
+<header>
+    <div id="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/1280px-Flag_of_Switzerland.svg.png"
+             alt="Schweizer Flagge">
+        <div id="header-Titel">Geschichte der Schweizer <br>Uhrenindustrie</div>
+    </div>
+    <nav>
+    </nav>
+</header>
+
+<main>
+    <div id="geschichte-menu-button" class="geschichte-menu-button" onclick="displaymenu()">
+        <div id="geschichte-menu-symbol" class="geschichte-menu-symbol">☰</div>
+        <a href="heute.html#header" id="geschichte-menu-button-top" class="geschichte-menu-links">Start</a>
+        <a href="../index.html" id="geschichte-menu-button-home" class="geschichte-menu-links">Home</a>
+        <a href="../geschichte.html#heute" id="geschichte-menu-button-ende" class="geschichte-menu-links">Zurück</a>
+    </div>
+    <div class="game_main">
+        <div class="game_background">
+            <div id="game_Timer">0.00</div>
+            <div id="control">
+                <button class="game_button" id="start_Timer" onclick="game_start()">Start</button>
+            </div>
+            <div id="Bestscore">Best try: keiner</div>
+        </div>
+    </div>
+    <div class="template_back">
+        <a class="template_link_back" href="impressum.html">Zurück</a>
+    </div>
+</main>
+<script>
+    const score_zahl = Math.floor(Math.random() * 15) + 1
+    const button_game = document.getElementById('start_Timer')
+    const time = document.getElementById('game_Timer');
+    const bestscore = document.getElementById('Bestscore')
+    let start = false
+
+    async function game_start() {
+        if (start === false) {
+            start = true
+            time.innerText = 0.00;
+            button_game.innerText = 'Stoppe bei ' + score_zahl
+            raise_timer()
+        } else if (start === true) {
+            start = false
+            button_game.innerText = 'Start'
+            await high_score(parseFloat(time.innerText))
+        }
+    }
+
+    async function raise_timer() {
+        while (start === true) {
+            await new Promise(r => setTimeout(r, 10))
+            let zeit = parseFloat(time.innerText)
+            zeit += 0.01
+            time.innerText = zeit.toFixed(2)
+        }
+    }
+
+    let c_high_score = 0.00
+    let d_high_score = score_zahl
+        async function high_score(time) {
+            time += 0.01
+            let dif = Math.abs(score_zahl - time)
+
+            if (d_high_score > dif) {
+                c_high_score = time
+                d_high_score = dif
+                bestscore.innerText = 'Best try: ' + c_high_score.toFixed(2);
+            }
+        }
+
+
+    const menuButton = document.getElementById('geschichte-menu-button');
+    const menuTop = document.getElementById('geschichte-menu-button-top');
+    const menuHome = document.getElementById('geschichte-menu-button-home');
+    const header = document.getElementById('header');
+    const button = document.getElementById('geschichte-menu-button');
+    const symbol = document.getElementById('geschichte-menu-symbol');
+    const ende = document.getElementById('geschichte-menu-button-ende')
+
+    let menuOpen = false; // Zustand des Menüs
+    const scrollThreshold = header.offsetHeight; // Dynamische Berechnung der Header-Höhe
+
+    // Funktion zum Umschalten des Menüs
+    function displaymenu() {
+        menuOpen = !menuOpen; // Zustand ändern
+        const displayValue = menuOpen ? 'block' : 'none';
+        menuTop.style.display = displayValue;
+        menuHome.style.display = displayValue;
+        ende.style.display = displayValue;
+        symbolmenu()
+    }
+
+    function symbolmenu() {
+        if (menuOpen === true) {
+            symbol.innerText = ''
+            button.style.backgroundImage = `linear-gradient(to top, #0d542d 20%, #1c9654 80%)`;
+        } else {
+            symbol.innerText = '☰'
+            button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
+        }
+    }
+
+    // Funktion, um die Position des Buttons relativ zum Header zu setzen
+    function updateButtonPosition() {
+        const headerBottom = header.getBoundingClientRect().bottom;
+
+        if (headerBottom > 0) {
+            // Button bleibt unter dem Header
+            button.style.top = `${headerBottom + 10}px`;
+        } else {
+            // Button fixieren, wenn Header nicht sichtbar ist
+            button.style.top = '2vh';
+        }
+    }
+
+    // Event-Listener für Scrollen
+    window.addEventListener('scroll', () => {
+        // Menü schließen beim Scrollen
+        if (menuOpen) {
+            menuOpen = false;
+            menuTop.style.display = 'none';
+            menuHome.style.display = 'none';
+            ende.style.display = 'none';
+            symbol.innerText = '☰';
+            button.style.backgroundImage = `radial-gradient(ellipse at center, #1c9654, #0d542d 75%)`;
+        }
+
+        // Dynamische Position des Buttons
+        updateButtonPosition();
+    });
+
+    // Initiale Position des Buttons setzen
+    updateButtonPosition();
+</script>
+<footer>
+    <div id="footer">
+        <a id="footer_main" class="footer_link" href="index.html">Home</a>
+        <a id="footer_geschichte" class="footer_link" href="geschichte.html">Geschichte</a>
+        <a id="footer_impressum" href="impressum.html">Impressum</a>
+    </div>
+</footer>
+</body>
+</html>

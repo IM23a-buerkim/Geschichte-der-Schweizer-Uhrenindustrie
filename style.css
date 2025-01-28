@@ -642,3 +642,50 @@ main {
     z-index: 0;
     overflow: hidden;
 }
+
+#gamelink {
+    text-decoration: none;
+    color: black;
+}
+
+.game_main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_background {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 50dvh;
+    background-color: lightgray;
+    margin-top: 10vh;
+    border-radius: 30px;
+}
+
+#game_Timer {
+    align-self: center;
+    font-size: 7vh;
+    margin: 5vh 10vw;
+}
+
+#control {
+    align-self: center;
+    display: flex;
+}
+
+.game_button {
+    width: 40vw;
+    height: 10dvh;
+    font-size: 5vh;
+}
+
+#Bestscore {
+    align-self: center;
+    font-size: 5vh;
+    margin: 5vh 10vw;
+}
